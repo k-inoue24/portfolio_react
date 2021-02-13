@@ -17,9 +17,6 @@ class Header extends React.Component {
               <Link to='/introduction'>Introduction</Link>
             </li>
             <li>
-              <Link to='/skill'>Skill</Link>
-            </li>
-            <li>
               <Link to='/link'>Link</Link>
             </li>
           </ul>

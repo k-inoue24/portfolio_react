@@ -1,5 +1,4 @@
 import React from 'react';
-import Top from '../page/Top';
 
 
 class Item extends React.Component {
@@ -7,19 +6,16 @@ class Item extends React.Component {
         super(props);
         this.state = {
           isModalOpen: false,
-          itemName: ''
         };
       }
-  handleClickItem(itemName) {
+      handleClickItem() {
         this.setState({
           isModalOpen: true,
-          itemName: itemName
         })
       }
       handleClickClose() {
           this.setState({
             isModalOpen: false,
-            itemName: ''
           })
       }
     render() {
@@ -27,7 +23,8 @@ class Item extends React.Component {
         if(this.state.isModalOpen) {
           itemModal = (
             <div className="itemModal">
-              {this.state.itemName}
+              <div className="itemTitle">{this.props.name}</div>
+              <div className="itemText">{this.props.text}</div>
               <button onClick={() => {this.handleClickClose()}}>閉じる</button>
             </div>
           )
@@ -39,16 +36,21 @@ class Item extends React.Component {
         }
     return (
         <div
-            className="item"
+          className="item"
         >
         <div
-          className="span"
-          onClick={() => { this.handleClickItem(this.props.name) }}
+          className="itemTitle"
         >
-          {this.props.name}
-          </div>
-          {itemModal}
-          </div>
+        {this.props.name}
+        </div>
+        <div
+          className="itemDetail"
+          onClick={() => { this.handleClickItem() }}
+        >
+          Click
+        </div>
+        {itemModal}
+        </div>
       )
   }
   }

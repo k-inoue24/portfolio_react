@@ -18,7 +18,8 @@ class Top extends React.Component {
       },
     ]
     return (
-      <main>
+      <div className="inner">
+        <h1 className="pageTitle">This is the casual site for challenging React!</h1>
         <div className='itemWrap'>
           {ItemList.map((item,index) => {
             return (
@@ -31,7 +32,7 @@ class Top extends React.Component {
             )
           })}
         </div>
-      </main>
+      </div>
       )
   }
   }

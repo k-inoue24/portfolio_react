@@ -32,22 +32,22 @@ class Link extends React.Component {
         },
       ]
     return (
-        <main>
-          <h1 className="pageTitle">LINK</h1>
-          <div className="linkWrap">
-            {PortfolioLIst.map((portfolio,idx) => {
-              return (
-                <Portfolio
-                  link={portfolio.link}
-                  image={portfolio.image}
-                  title={portfolio.title}
-                  text={portfolio.text}
-                  key={idx}
-                />
-              );
-            })}
-          </div>
-        </main>
+      <div className="inner">
+        <h1 className="pageTitle">LINK</h1>
+        <div className="linkWrap">
+          {PortfolioLIst.map((portfolio,idx) => {
+            return (
+              <Portfolio
+                link={portfolio.link}
+                image={portfolio.image}
+                title={portfolio.title}
+                text={portfolio.text}
+                key={idx}
+              />
+            );
+          })}
+        </div>
+      </div>
         )
     }
   }

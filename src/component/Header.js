@@ -7,7 +7,7 @@ class Header extends React.Component {
       <header>
         <div className="inner">
           <div className="siteTitle">
-            K's Casual Portfolio<span>developed with React</span>
+            <Link to="/">K's Casual Portfolio<span>developed with React</span></Link>
           </div>
           {/* <h1 className="siteTitle">
             K's Casual Portfolio<span>developed with React</span>

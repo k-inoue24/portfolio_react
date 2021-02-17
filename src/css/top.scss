@@ -24,20 +24,20 @@
             background: #222;
             padding: 20px 0;
             &.modalTitle {
-                background: #571e20;
+                background: #7e2c2f;
             }
         }
         .itemDetail {
             cursor: pointer;
             color: #fff;
-            background: #571e20;
+            background: #7e2c2f;
             font-size: 1.5rem;
             letter-spacing: 0.1em;
             padding: 10px 0;
             border-top: 7px double #fff;
             transition: 0.3s;
             &:hover {
-                background: #623d3e;
+                background: #8f5456;
             }
         }
     }

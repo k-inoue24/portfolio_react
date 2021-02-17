@@ -28,23 +28,22 @@ class Introduction extends React.Component {
       },
     ]
     return (
-        <main>
-          <h1 className="pageTitle">INTRODUCTION</h1>
-          <div className="introductionWrap">
-            {
-              DetailItemList.map((detailItem,idx) => {
-                return (
-                  <DetailItem
-                    title={detailItem.title}
-                    text={detailItem.text}
-                    key={idx}
-                  />
-                )
-              })
-            }
-          </div>
-
-        </main>
+      <div className="inner">
+        <h1 className="pageTitle">INTRODUCTION</h1>
+        <div className="introductionWrap">
+          {
+            DetailItemList.map((detailItem,idx) => {
+              return (
+                <DetailItem
+                  title={detailItem.title}
+                  text={detailItem.text}
+                  key={idx}
+                />
+              )
+            })
+          }
+        </div>
+      </div>
         )
     }
   }

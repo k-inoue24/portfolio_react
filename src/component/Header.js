@@ -5,22 +5,27 @@ class Header extends React.Component {
   render() {
     return (
       <header>
-        <div className="siteTitle">
-          K's Casual Portfolio<span>developed by React</span>
+        <div className="inner">
+          <div className="siteTitle">
+            K's Casual Portfolio<span>developed with React</span>
+          </div>
+          {/* <h1 className="siteTitle">
+            K's Casual Portfolio<span>developed with React</span>
+          </h1> */}
         </div>
-        <nav>
-          <ul>
-            <li>
-              <Link to='/'>Home</Link>
-            </li>
-            <li>
-              <Link to='/introduction'>Introduction</Link>
-            </li>
-            <li>
-              <Link to='/link'>Link</Link>
-            </li>
-          </ul>
-        </nav>
+          <nav>
+            <ul>
+              <li>
+                <Link to='/'>HOME</Link>
+              </li>
+              <li>
+                <Link to='/introduction'>INTRODUCTION</Link>
+              </li>
+              <li>
+                <Link to='/link'>LINK</Link>
+              </li>
+            </ul>
+          </nav>
       </header>
       )
   }

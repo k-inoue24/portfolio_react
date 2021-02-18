@@ -1,20 +1,18 @@
 import React from 'react';
-import { Route, Switch, withRouter } from 'react-router-dom';
-import routes from '../routes/routes';
+import { Route, Switch } from 'react-router-dom';
+import Top from '../page/Top';
+import Introduction from '../page/Introduction';
+import Link from '../page/Link';
 
 class Main extends React.Component {
   render() {
     return (
       <main>
         <Switch>
-        {routes.map((route, idx) => (
-          <Route
-              path={route.path}
-              exact={route.exact}
-              component={route.component}
-              key={idx}
-          />
-        ))}
+          <Route path="/" component={Top} exact />
+          <Route path="/introduction" component={Introduction} />
+          <Route path="/link" component={Link} />
+          <Route component={Top} exact />
         </Switch>
       </main>
       )

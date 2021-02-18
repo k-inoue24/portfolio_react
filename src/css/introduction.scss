@@ -20,6 +20,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 6px;
     }
     .textContent {
         font-size: 1.5rem;
@@ -27,7 +28,9 @@
     }
 }
 
-// 599px以下
+
+/* 599px以下 */
+
 @media only screen and (max-width:768px) {
     .introductionItem {
         flex-direction: column;

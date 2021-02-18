@@ -9,9 +9,6 @@ class Header extends React.Component {
           <div className="siteTitle">
             <Link to="/">K's Casual Portfolio<span>developed with React</span></Link>
           </div>
-          {/* <h1 className="siteTitle">
-            K's Casual Portfolio<span>developed with React</span>
-          </h1> */}
         </div>
           <nav>
             <ul>

@@ -1,4 +1,5 @@
-// 共通
+/* 共通 */
+
 html {
     font-size: 62.5%;
 }
@@ -18,7 +19,9 @@ li {
     list-style: none;
 }
 
-// ヘッダー
+
+/* ヘッダー */
+
 .siteTitle {
     line-height: 1;
     font-weight: 600;
@@ -31,7 +34,9 @@ li {
     }
 }
 
-// ナビ
+
+/* ナビ */
+
 nav {
     ul {
         display: flex;
@@ -59,7 +64,9 @@ nav {
     }
 }
 
-// メイン
+
+/* メイン */
+
 main {
     padding: 30px 0;
 }
@@ -77,7 +84,9 @@ main {
     margin-bottom: 30px;
 }
 
-// フッター
+
+/* フッター */
+
 footer {
     text-align: center;
     color: #fff;

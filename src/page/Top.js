@@ -8,12 +8,12 @@ class Top extends React.Component {
     const ItemList = [
       {
         name: 'INTRODUCTION',
-        text: '経歴やこれからの目標、趣味などをゆるーく紹介します！',
+        text: '経歴や今後の目標、現在のスキルセットなどを紹介します！',
         link: '/introduction'
       },
       {
         name: 'LINK',
-        text: '個人ブログなど、ポートフォリオ的なものを掲載しています！',
+        text: '個人ブログやGitHubなど、各種リンクを掲載しています！',
         link: '/link'
       },
     ]

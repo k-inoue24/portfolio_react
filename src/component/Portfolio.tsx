@@ -1,6 +1,12 @@
 import React from 'react';
 
-class Portfolio extends React.Component {
+interface PortfolioProps{
+  link: string,
+  image: string,
+  title: string,
+  text: string
+}
+class Portfolio extends React.Component<PortfolioProps> {
     render() {
         return (
           <li className="linkItem">

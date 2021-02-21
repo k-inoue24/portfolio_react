@@ -1,6 +1,10 @@
 import React from 'react';
 
-class DetailItem extends React.Component {
+interface DetailItemProps {
+  text: string,
+  title: string
+}
+class DetailItem extends React.Component<DetailItemProps> {
   render() {
     var brText = this.props.text.split('<br>').map(function(text,idx) {
       return (<p key={idx}>{text}</p>);

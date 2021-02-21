@@ -1,9 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-class Item extends React.Component {
-    constructor(props) {
-        super(props);
+interface ItemProps {
+  name: string,
+  text: string,
+  link: string
+}
+interface ItemState {
+  isModalOpen: boolean,
+}
+
+class Item extends React.Component<ItemProps, ItemState> {
+    constructor(props: ItemProps) {
+      super(props);
         this.state = {
           isModalOpen: false,
         };
